@@ -19,7 +19,8 @@ public class MoveBasic : MonoBehaviour
     {
         float rot = Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime;
         rb.transform.Rotate(new Vector3(0, rot, 0));
+        float move = Time.deltaTime * speed * Input.GetAxis("Vertical");
     }
-    float move = Time.deltaTime * speed * Input.GetAxis("Vertical");
-    }
+   
 }
+

@@ -16,30 +16,23 @@ public class standardMovementscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.A))
         {
-            transform.position -= transform.right * speed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            transform.position += transform.right * speed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.W))
-        {
-            transform.position += transform.up * speed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.position -= transform.up * speed * Time.deltaTime;
+            transform.position -= transform.forward * speed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.D))
         {
             transform.position += transform.forward * speed * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.A))
+        //if (Input.GetKey(KeyCode.W))
+       // {
+            //transform.position += transform.up * speed * Time.deltaTime;
+        //}
+        if (Input.GetKey(KeyCode.S))
         {
-            transform.position -= transform.forward * speed * Time.deltaTime;
+            transform.position -= transform.up * speed * Time.deltaTime;
         }
         Debug.Log("de cube staat op" + transform.position);
+        
     }
 }
