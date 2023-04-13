@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Menu.unity
+    guid: 22917639bdc159b4cae74fd9d762fcab
+  - enabled: 1
+    path: Assets/warrior fighter.unity
+    guid: 3d8b2eb4211dbc74e8c421159c76cf52
   m_configObjects: {}
